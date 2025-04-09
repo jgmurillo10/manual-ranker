@@ -1,0 +1,245 @@
+.App {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.folder-button,
+.download-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.folder-button:hover,
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+.folder-name {
+  margin: 10px 0;
+  color: #666;
+  font-style: italic;
+}
+
+.drag-drop-context {
+  width: 100%;
+  min-height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.image-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 200px;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  overflow: hidden;
+  width: 100%;
+  cursor: grab;
+}
+
+.image-container:hover {
+  transform: translateY(-5px);
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  display: block;
+}
+
+.image-index {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.image-name {
+  padding: 12px;
+  font-size: 14px;
+  color: #666;
+  word-break: break-all;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.move-to-last-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 59, 48, 0.9);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.move-to-last-button:hover {
+  background: rgba(255, 59, 48, 1);
+}
+
+.criterion-select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.compare-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.compare-button:hover {
+  background-color: #218838;
+}
+
+.comparison-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.comparison-pair {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.comparison-item {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comparison-image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.choose-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.choose-button:hover {
+  background-color: #0056b3;
+}
+
+.cancel-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}
+
+.round-info {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.comparison-container h2 {
+  margin-bottom: 5px;
+}
+
+.additional-options {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.option-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.both-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.both-button:hover {
+  background-color: #218838;
+}
+
+.none-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.none-button:hover {
+  background-color: #c82333;
+}
+
+.skip-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.skip-button:hover {
+  background-color: #5a6268;
+} 
